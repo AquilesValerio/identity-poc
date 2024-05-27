@@ -1,4 +1,4 @@
-package br.com.domain.gateway;
+package br.com.infrastructure.gateway;
 
 import br.com.domain.entities.User;
 import br.com.domain.interfaces.gateway.IuserGateway;
