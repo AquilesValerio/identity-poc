@@ -5,18 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fdb020e6-e213-4c38-85f4-3e85f70241db" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/br/com/application/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/application/services/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/br/com/domain/entities/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/domain/entities/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/br/com/domain/interfaces/services/IuserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/domain/interfaces/services/IuserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/br/com/infrastructure/DTO/IN/UserIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/infrastructure/DTO/IN/UserIn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/br/com/infrastructure/DTO/OUT/UserOut.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/infrastructure/DTO/OUT/UserOut.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/br/com/infrastructure/http/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/br/com/infrastructure/http/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/UserController.class.uniqueId1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/UserService.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/UserService.class.uniqueId0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/application/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/application/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/domain/entities/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/domain/entities/Role.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/domain/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/domain/entities/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/domain/gateway/UserGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/domain/gateway/UserGateway.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/domain/interfaces/gateway/IuserGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/domain/interfaces/gateway/IuserGateway.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/domain/interfaces/services/IuserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/domain/interfaces/services/IuserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/infrastructure/DTO/IN/UserIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/infrastructure/DTO/IN/UserIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/infrastructure/DTO/IN/UserInPatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/infrastructure/DTO/IN/UserInPatch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/infrastructure/DTO/OUT/UserOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/infrastructure/DTO/OUT/UserOut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/infrastructure/http/GlobalException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/infrastructure/http/GlobalException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/infrastructure/http/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/infrastructure/http/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/infrastructure/persistence/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/infrastructure/persistence/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/infrastructure/persistence/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/infrastructure/persistence/RoleRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,14 +66,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Record" />
         <option value="Class" />
         <option value="Interface" />
+        <option value="Record" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -69,11 +90,11 @@
   &quot;keyToString&quot;: {
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Build identity.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.identity [:Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.identity [:Main.main()].executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/aquilessilva/Aquiles/ProjetosGit/teste-dev-superior/dscatalog-bds3-backend2-main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/aquilessilva/Aquiles/ProjetosGit/locadora-poc/poc-locadora&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
@@ -88,6 +109,10 @@
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="br.com.infrastructure" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.com.infrastructure.DTO.IN" />
+      <recent name="br.com.infrastructure.DTO.OUT" />
     </key>
   </component>
   <component name="RunManager">
@@ -109,13 +134,6 @@
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-17.0.9-corretto-17.0.9-f644763e9732-220112af" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -147,24 +165,39 @@
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/infrastructure/http/UserController.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="7" />
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/infrastructure/http/RoleController.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/domain/gateway/RoleGateway.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/br/com/domain/gateway/UserGateway.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="8" />
+          <line>48</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/br/com/application/services/UserService.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="9" />
+          <line>106</line>
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/domain/gateway/UserGateway.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="11" />
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/infrastructure/http/UserController.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/application/services/UserService.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/application/services/UserService.java</url>
+          <line>121</line>
+          <option name="timeStamp" value="43" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

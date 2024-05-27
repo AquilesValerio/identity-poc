@@ -50,6 +50,11 @@ public class User {
 		}
 	}
 
+	public User(String email, String password) {
+		this.email = email;
+		this.password = password;
+	}
+
 	public User() {}
 
 	@Id
@@ -71,8 +76,6 @@ public class User {
 		joinColumns = @JoinColumn(name = "user_id"),
 		inverseJoinColumns = @JoinColumn(name = "role_id"))
 	private List<Role> roleList;
-
-
 
 	public long getId() {
 		return id;

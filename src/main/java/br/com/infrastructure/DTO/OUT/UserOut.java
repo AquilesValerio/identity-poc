@@ -8,7 +8,7 @@ import java.util.Optional;
 public record UserOut(Long id, String name, String email, String password, String cpf, List<Role> roleList) {
 
 	public static UserOut toOut(User user){
-		return new UserOut(user.getId(), user.getName(), user.getPassword(), user.getPassword(), user.getEmail(),
+		return new UserOut(user.getId(), user.getName(), user.getEmail(), user.getPassword(), user.getEmail(),
 			user.getRoleList());
 	}
 

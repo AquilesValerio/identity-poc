@@ -21,7 +21,7 @@ public class UserGateway implements IuserGateway {
 
 	@Override
 	public Optional<User> findById(Long id) {
-		 return userRepository.findById(id).map(e-> Optional.ofNullable(e)).orElse(Optional.empty());
+		return userRepository.findById(id).map(e -> Optional.ofNullable(e)).orElse(Optional.empty());
 	}
 
 	@Override
@@ -58,6 +58,4 @@ public class UserGateway implements IuserGateway {
 	public User findByEmail(String email) {
 		return userRepository.findByEmail(email);
 	}
-
-
 }

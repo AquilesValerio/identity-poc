@@ -1,15 +1,14 @@
 package br.com.infrastructure.http;
 
 import br.com.application.services.UserService;
-import br.com.domain.entities.User;
 import br.com.domain.interfaces.services.IuserService;
-import br.com.infrastructure.DTO.IN.RoleIn;
 import br.com.infrastructure.DTO.IN.UserIn;
 import br.com.infrastructure.DTO.IN.UserInPatch;
 import br.com.infrastructure.DTO.IN.UserInUpdate;
+import br.com.infrastructure.DTO.IN.UserInLogin;
+import br.com.infrastructure.DTO.OUT.LoginOut;
 import br.com.infrastructure.DTO.OUT.UserOut;
 import br.com.infrastructure.DTO.OUT.UserOutList;
-import jakarta.validation.Valid;
 import java.net.URI;
 import java.util.List;
 import java.util.Optional;
@@ -61,15 +60,21 @@ public class UserController {
 	}
 
 	@PutMapping("/{id}")
-	public ResponseEntity update(@PathVariable Long id, @RequestBody UserInUpdate requestBody){
+	public ResponseEntity update(@PathVariable Long id, @RequestBody UserInUpdate requestBody) {
 		iuserService.update(id, requestBody);
 		return ResponseEntity.noContent().build();
 	}
 
 	@PatchMapping("/{id}")
-	public ResponseEntity patchPassword(@RequestBody UserInPatch requestBody){
+	public ResponseEntity patchPassword(@RequestBody UserInPatch requestBody) {
 		iuserService.patchPassword(requestBody);
 		return ResponseEntity.noContent().build();
+	}
+
+	@PostMapping("/login")
+	public ResponseEntity<LoginOut> login(@RequestBody UserInLogin user) {
+		var result = iuserService.login(user);
+		return ResponseEntity.ok().body(result);
 	}
 }
 

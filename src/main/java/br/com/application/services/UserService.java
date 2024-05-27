@@ -5,8 +5,10 @@ import br.com.domain._share.NotificationPattern;
 import br.com.domain.entities.User;
 import br.com.domain.interfaces.gateway.IuserGateway;
 import br.com.domain.interfaces.services.IuserService;
+import br.com.infrastructure.DTO.IN.UserInLogin;
 import br.com.infrastructure.DTO.IN.UserInPatch;
 import br.com.infrastructure.DTO.IN.UserInUpdate;
+import br.com.infrastructure.DTO.OUT.LoginOut;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.http.HttpStatus;
@@ -63,12 +65,18 @@ public class UserService implements IuserService {
 		iuserGateway.patchPassword(entity);
 	}
 
+	@Override
+	public LoginOut login(UserInLogin requestBody) {
+		var result = validatePasswordLogin(requestBody);
+		return new LoginOut("sucesso", 10);
+	}
+
 	private User updateUser(Long id, UserInUpdate requestBody) {
 		var entity = validateId(id);
 		var entityUpdated = requestBody.toDomainUpdated(requestBody);
-		 entityUpdated.setId(id);
-		 entityUpdated.setPassword(entity.getPassword());
-		 return entityUpdated;
+		entityUpdated.setId(id);
+		entityUpdated.setPassword(entity.getPassword());
+		return entityUpdated;
 	}
 
 	private void existsByName(User user) {
@@ -86,8 +94,8 @@ public class UserService implements IuserService {
 		}
 	}
 
-	private User validateEmail(UserInPatch requestBody) {
-		var emailIsPresent = iuserGateway.findByEmail(requestBody.email());
+	private User validateEmail(String email) {
+		var emailIsPresent = iuserGateway.findByEmail(email);
 		if (emailIsPresent == null) {
 			new ApiException(HttpStatus.BAD_REQUEST, "Register not found");
 		}
@@ -100,14 +108,27 @@ public class UserService implements IuserService {
 	}
 
 	private User validatePassword(UserInPatch requestBody) {
-		var entity = validateEmail(requestBody);
+		var entity = validateEmail(requestBody.email());
 
-		if (!passwordEncoder.matches(requestBody.oldPassword(), entity.getPassword())) {
+		if (!isPasswordValid(requestBody.oldPassword(), entity.getPassword())) {
 			throw new ApiException(HttpStatus.NOT_FOUND, "Senha inválida");
 		} else {
 			entity.setPassword(passwordEncoder.encode(requestBody.newPassword()));
 		}
 		return entity;
+	}
+
+	private User validatePasswordLogin(UserInLogin requestBody) {
+		var entity = validateEmail(requestBody.email());
+
+		if (!isPasswordValid(requestBody.password(), entity.getPassword())) {
+			throw new ApiException(HttpStatus.UNAUTHORIZED, "Login inválido");
+		}
+		return entity;
+	}
+
+	private boolean isPasswordValid(String oldPassword, String newPwassword){
+		return passwordEncoder.matches(oldPassword, newPwassword);
 	}
 }
 

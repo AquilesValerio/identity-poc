@@ -15,4 +15,5 @@ public interface IuserGateway {
 	void update(User user);
 	User patchPassword (User user);
 	User findByEmail(String username);
+
 }
